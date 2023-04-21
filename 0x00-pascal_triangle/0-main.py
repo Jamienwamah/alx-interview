@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 """
-0-main for the python code
+0-main
 """
 pascal_triangle = __import__('0-pascal_triangle').pascal_triangle
 
-def print_triangle(triangle):
+def print_triangle(empty_list):
     """
-    Print the pascal triangle
+    Print the triangle
     """
-    for row in triangle:
+    for row in empty_list:
         print("[{}]".format(",".join([str(x) for x in row])))
 
 

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Pascal Triangle Interview Challenge for Alx project conducted by Dr Marcus"""
+"""Pascal Triangle Interview Challenge"""
 
 
 def pascal_triangle(n):
@@ -8,20 +8,24 @@ def pascal_triangle(n):
     if n <= 0:
         return []
 
-    pascal_triangle = [0] * n
+    triangle = [[1]]
 
-    for i in range(n):
-        # This code snipet define and explained that  a row is  fill first and last idx with 1
-        row = [0] * (i+1)
-        row[0] = 1
-        row[len(row) - 1] = 1
+    for i in range(1, n):
+        row = [1]
 
         for j in range(1, i):
-            if j > 0 and j < len(row):
-                x = pascal_triangle[i - 1][j]
-                y = pascal_triangle[i - 1][j - 1]
-                row[j] = x + y
+            row.append(triangle[i-1][j-1] + triangle[i-1][j])
+        row.append(1)
+        triangle.append(row)
 
-        pascal_triangle[i] = row
+    return triangle
 
-    return pascal_triangle
+
+"""This implementation uses a nested loop to
+build up the Pascal's triangle row by row.
+The outer loop runs from 1 to n-1
+(inclusive) to generate each row, and the inner loop
+generates each element of the row based on the
+values in the previous row. The triangle
+is represented as a list of lists of integers,
+with each inner list representing a row of the triangle."""
