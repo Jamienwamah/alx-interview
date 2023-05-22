@@ -1,15 +1,19 @@
 
 Curriculum
 Short Specializations
-Average: 115.09%
+Average: 112.73%
 0x04. UTF-8 Validation
 Algorithm
 Python
  By: Carrie Ybay, Software Engineer at Holberton School
  Weight: 1
- Project will start May 15, 2023 6:00 AM, must end by May 19, 2023 6:00 AM
- Checker will be released at May 16, 2023 6:00 AM
+ Project over - took place from May 15, 2023 6:00 AM to May 19, 2023 6:00 AM
  An auto review will be launched at the deadline
+In a nutshell…
+Auto QA review: 11.0/14 mandatory
+Altogether:  78.57%
+Mandatory: 78.57%
+Optional: no optional tasks
 Resources
 Read or watch:
 
@@ -27,6 +31,7 @@ All your files must be executable
 Tasks
 0. UTF-8 Validation
 mandatory
+Score: 78.57% (Checks completed: 78.57%)
 Write a method that determines if a given data set represents a valid UTF-8 encoding.
 
 Prototype: def validUTF8(data)
@@ -63,5 +68,5 @@ Repo:
 GitHub repository: alx-interview
 Directory: 0x04-utf8_validation
 File: 0-validate_utf8.py
- 
+    
 Copyright © 2023 ALX, All rights reserved.
